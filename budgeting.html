@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneySense - Budgeting</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom CSS styles */
+    body {
+      margin: 0;
+      /* Add this to reset default margin */
+    }
+
+    .container {
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .result {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust height as needed */
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    main {
+      padding-bottom: 60px;
+      /* adjust padding to match footer height */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-3">
+    <h1>MoneySense - Budgeting</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">MoneySense</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="budgeting.html">Budgeting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="debt_management.html">Debt Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="investing.html">Investing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="financial_literacy.html">Financial Literacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section>
+      <h2>Budgeting</h2>
+      <p>
+        Budgeting or organizing your spending is a foundational tool for wealth accumulation. People often overlook
+        tracking expenses and planning for the future which can lead to problems down the line.
+      </p>
+    </section>
+
+    <!-- Expense Tracker -->
+    <section>
+      <h2>Expense Tracker</h2>
+      <form id="expense-tracker-form">
+        <div class="form-group">
+          <label for="income">Monthly Income</label>
+          <input type="number" class="form-control" id="income" placeholder="Enter your monthly income" required>
+        </div>
+        <h3>Expenses</h3>
+        <div class="form-group">
+          <label for="housing">Housing</label>
+          <input type="number" class="form-control" id="housing" placeholder="Enter your housing expenses" required>
+        </div>
+        <div class="form-group">
+          <label for="transportation">Transportation</label>
+          <input type="number" class="form-control" id="transportation" placeholder="Enter your transportation expenses"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="food">Food</label>
+          <input type="number" class="form-control" id="food" placeholder="Enter your food expenses" required>
+        </div>
+        <div class="form-group">
+          <label for="utilities">Utilities</label>
+          <input type="number" class="form-control" id="utilities" placeholder="Enter your utilities expenses" required>
+        </div>
+        <div class="form-group">
+          <label for="entertainment">Entertainment</label>
+          <input type="number" class="form-control" id="entertainment" placeholder="Enter your entertainment expenses"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="savings">Savings</label>
+          <input type="number" class="form-control" id="savings" placeholder="Enter your savings" required>
+        </div>
+        <div class="form-group">
+          <label for="miscellaneous">Miscellaneous</label>
+          <input type="number" class="form-control" id="miscellaneous" placeholder="Enter your miscellaneous expenses"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="budget-result" class="result">
+        Your budget is: $<span id="budget-amount"></span>
+      </div>
+    </section>
+
+    <!-- Saving Goals -->
+    <section>
+      <h2>Saving Goals</h2>
+      <p>Setting up a saving goal is a crucial step towards financial freedom. It helps you to track your progress and
+        stay motivated to achieve your financial goals.</p>
+      <form id="saving-goals-form">
+        <div class="form-group">
+          <label for="savingGoal">Saving Goal</label>
+          <input type="text" class="form-control" id="savingGoal" placeholder="Enter your saving goal" required>
+        </div>
+        <div class="form-group">
+          <label for="deadline">Deadline</label>
+          <input type="date" class="form-control" id="deadline" required>
+        </div>
+        <div class="form-group">
+          <label for="amountToSave">Amount to Save</label>
+          <input type="number" class="form-control" id="amountToSave" placeholder="Enter the amount you want to save"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="saving-goals-result" class="result">
+        Your saving goals have been submitted successfully.
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-muted">Copyright © 2023 MoneySense</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <nav>
+            <ul class="list-inline">
+              <li class="list-inline-item"> <a href="contact.html" class="text-muted">Contact Us</a> </li>
+              <li class="list-inline-item"> <a href="about.html" class="text-muted">About Us</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript code for expense tracker form
+    document.getElementById('expense-tracker-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get form values
+      const income = parseFloat(document.getElementById('income').value);
+      const housing = parseFloat(document.getElementById('housing').value);
+      const transportation = parseFloat(document.getElementById('transportation').value);
+      const food = parseFloat(document.getElementById('food').value);
+      const utilities = parseFloat(document.getElementById('utilities').value);
+      const entertainment = parseFloat(document.getElementById('entertainment').value);
+      const savings = parseFloat(document.getElementById('savings').value);
+      const miscellaneous = parseFloat(document.getElementById('miscellaneous').value);
+
+      // Calculate total expenses
+      const totalExpenses = housing + transportation + food + utilities + entertainment + savings + miscellaneous;
+
+      // Calculate budget
+      const budget = income - totalExpenses;
+
+      // Display budget result
+      const budgetResult = document.getElementById('budget-result');
+      const budgetAmount = document.getElementById('budget-amount');
+      budgetResult.style.display = 'block';
+      budgetAmount.textContent = budget.toFixed(2);
+    });
+
+    // JavaScript code for saving goals form
+    document.getElementById('saving-goals-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get form values
+      const savingGoal = document.getElementById('savingGoal').value;
+      const deadline = document.getElementById('deadline').value;
+      const amountToSave = parseFloat(document.getElementById('amountToSave').value);
+
+      // Display saving goals result
+      const savingGoalsResult = document.getElementById('saving-goals-result');
+      savingGoalsResult.style.display = 'block';
+      savingGoalsResult.textContent = `Your saving goal "${savingGoal}" with a deadline of ${deadline} has been submitted successfully. You want to save $${amountToSave}.`;
+    });
+  </script>
+  <style>
+    .nav-link {
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      background-color: blue;
+      animation: underline 0.5s forwards;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust the height to your preference */
+      background-color: #f8f9fa;
+      /* adjust the background color to your preference */
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      margin-bottom: 120px;
+      /* adjust the margin to accommodate the calculator section */
+    }
+  </style>
+</body>
+
+</html>

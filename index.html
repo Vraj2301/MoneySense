@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoneySense</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <h1>MoneySense</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">MoneySense</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="budgeting.html">Budgeting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="debt_management.html">Debt Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="investing.html">Investing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="financial_literacy.html">Financial Literacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container mt-4">
+    <h2>Welcome to MoneySense</h2>
+    <p>
+      In our money-driven world, a large number of individuals have a minimal
+      understanding of how to manage their personal finances effectively. This
+      knowledge gap leads to debt, financial stress, instability and missed
+      opportunities. In order to address the problem at hand properly, we must
+      acknowledge the deficiencies across these major domains where financial
+      literacy is lacking: Budgeting, debt management, investing and
+      financial decision making.
+    </p>
+  </main>
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-muted">Copyright © 2023 MoneySense</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <nav>
+            <ul class="list-inline">
+              <li class="list-inline-item"> <a href="contact.html" class="text-muted">Contact Us</a> </li>
+              <li class="list-inline-item"> <a href="about.html" class="text-muted">About Us</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <style>
+    .nav-link {
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      background-color: blue;
+      animation: underline 0.5s forwards;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust the height to your preference */
+      background-color: #f8f9fa;
+      /* adjust the background color to your preference */
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      margin-bottom: 60px;
+      /* adjust the margin to match the height of the footer */
+    }
+  </style>
+</body>
+
+</html>
