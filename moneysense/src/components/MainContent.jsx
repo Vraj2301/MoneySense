@@ -1,9 +1,11 @@
 import React from 'react';
+import Slideshow from './Slideshow';
 
 function MainContent() {
   return (
     <main className="container mt-4">
       <h2>Welcome to MoneySense</h2>
+      <Slideshow />
       <p>
         In our money-driven world, a large number of individuals have a minimal
         understanding of how to manage their personal finances effectively. This

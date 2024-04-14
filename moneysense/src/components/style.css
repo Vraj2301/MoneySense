@@ -93,6 +93,14 @@
       }
     }
 
+    .form-group{
+      margin-top: 10px;
+    }
+
+    Slider{
+      margin: 20px;
+    }
+
     footer {
       position: fixed;
       bottom: 0;
@@ -124,6 +132,10 @@
       color: #fff;
       padding: 1.5rem 0;
       text-align: center;
+    }
+
+    .btn{
+      margin-top: 10px;
     }
 
     main {
