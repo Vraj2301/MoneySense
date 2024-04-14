@@ -22,7 +22,7 @@ function Contact() {
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <div id="confirmation" class="confirmation" style="display: none;">
+      <div id="confirmation" class="confirmation" style={{ display: 'none' }}>
         Thank you for your message! We'll get back to you as soon as possible.
       </div>
     </div>

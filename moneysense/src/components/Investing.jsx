@@ -38,7 +38,7 @@ function Investing() {
         </div>
         <button type="submit" class="btn btn-primary">Calculate</button>
       </form>
-      <div id="investment-result" class="result">
+      <div id="investment-result" class="result" style={{ display: 'none' }}>
         Your investment will grow to $<span id="investmentAmount"></span> in <span id="investmentYears"></span>
         years.
       </div>

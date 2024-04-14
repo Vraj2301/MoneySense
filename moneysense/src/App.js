@@ -11,6 +11,8 @@ import Debt_management from './components/Debt_management';
 import Financial_literacy from './components/Financial_literacy';
 import Investing from './components/Investing';
 import Script from './components/Script'; // Import the Script component
+import './components/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/budgeting" element={<BudgetingPage />} />
-          <Route path="/contact" element={<About/>} />
-          <Route path="/about" element={<Contact/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="/debt_management" element={<Debt_management />} />
           <Route path="/financial_literacy" element={<Financial_literacy />} />
           <Route path="/investing" element={<Investing />} />

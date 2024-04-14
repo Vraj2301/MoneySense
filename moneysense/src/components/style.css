@@ -1,0 +1,176 @@
+
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      /* Reset default margin */
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      background-color: blue;
+      animation: underline 0.5s forwards;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust the height to your preference */
+      background-color: #f8f9fa;
+      /* adjust the background color to your preference */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      background-color: blue;
+      animation: underline 0.5s forwards;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust the height to your preference */
+      background-color: #f8f9fa;
+      /* adjust the background color to your preference */
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      margin-bottom: 120px;
+      /* adjust the margin to accommodate the calculator section */
+    }
+
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      /* Reset default margin */
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      background-color: blue;
+      animation: underline 0.5s forwards;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      /* adjust the height to your preference */
+      background-color: #f8f9fa;
+      /* adjust the background color to your preference */
+      padding: 10px;
+      text-align: center;
+    }
+
+    

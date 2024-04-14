@@ -51,7 +51,7 @@ function BudgetingPage() {
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <div id="budget-result" class="result">
+      <div id="budget-result" class="result" style={{ display: 'none' }}>
         Your budget is: $<span id="budget-amount"></span>
       </div>
     </section>
@@ -75,7 +75,7 @@ function BudgetingPage() {
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <div id="saving-goals-result" class="result">
+      <div id="saving-goals-result" class="result" style={{ display: 'none' }}>
         Your saving goals have been submitted successfully.
       </div>
     </section>

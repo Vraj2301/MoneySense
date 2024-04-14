@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 function Script() {
   useEffect(() => {
     // JavaScript code for expense tracker form
+    const ex = document.getElementById('expense-tracker-form')
+    if(ex){
     document.getElementById('expense-tracker-form').addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -27,8 +29,10 @@ function Script() {
       const budgetAmount = document.getElementById('budget-amount');
       budgetResult.style.display = 'block';
       budgetAmount.textContent = budget.toFixed(2);
-    });
+    });}
 
+    const fx = document.getElementById('saving-goals-form')
+    if(fx){
     // JavaScript code for saving goals form
     document.getElementById('saving-goals-form').addEventListener('submit', function (event) {
       event.preventDefault();
@@ -42,8 +46,10 @@ function Script() {
       const savingGoalsResult = document.getElementById('saving-goals-result');
       savingGoalsResult.style.display = 'block';
       savingGoalsResult.textContent = `Your saving goal "${savingGoal}" with a deadline of ${deadline} has been submitted successfully. You want to save $${amountToSave}.`;
-    });
+    });}
 
+    const con = document.getElementById('contact-form')
+    if(con){
     // Contact page 
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
@@ -53,8 +59,9 @@ function Script() {
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
-    });
+    });}
 
+    if(document.getElementById('debt-repayment-form')){
     // JavaScript code for debt repayment calculator
     document.getElementById('debt-repayment-form').addEventListener('submit', function (event) {
       event.preventDefault();
@@ -73,8 +80,10 @@ function Script() {
       debtRepaymentResult.textContent = `Your debt will be paid off in ${monthsToRepay} months.`;
       debtRepaymentResult.style.display = 'block';
     });
+}
 
-    // Investing page
+if(document.getElementById('investment-form'))
+    {// Investing page
     document.getElementById('investment-form').addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -98,10 +107,9 @@ function Script() {
       investmentResult.style.display = 'block';
       investmentAmount.textContent = futureValue.toFixed(2);
       investmentYears.textContent = years;
-    });
+    });}
 
   }, []); // Empty dependency array to run the effect only once
-
   
 
   return null;

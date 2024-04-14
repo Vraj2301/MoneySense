@@ -21,7 +21,7 @@ function Debt_management() {
         </div>
         <button type="submit" class="btn btn-primary">Calculate</button>
       </form>
-      <div id="debt-repayment-result" class="result">
+      <div id="debt-repayment-result" class="result" style={{ display: 'none' }}>
         Your debt will be paid off in <span id="monthsToRepay"></span> months.
       </div>
     </section>
