@@ -101,6 +101,45 @@
       margin: 20px;
     }
 
+    .lesson {
+      padding: 20px;
+    }
+    
+    .grey-background {
+      background-color: #f2f2f2; /* Grey background color */
+    }
+    
+    .white-background {
+      background-color: #ffffff; /* White background color */
+    }
+    
+    .lessons-title {
+      text-align: center;
+    }
+    
+    .lesson-title {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .next-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .next-button:hover {
+      background-color: #0056b3;
+    }
+    
+    
+    .lesson-description {
+      margin-bottom: 20px;
+    }    
+
     footer {
       position: fixed;
       bottom: 0;

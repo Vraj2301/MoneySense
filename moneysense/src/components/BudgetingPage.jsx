@@ -4,20 +4,20 @@ function BudgetingPage() {
   return (
     <main className="container">
       <section>
-        <h2>Budgeting</h2>
+        <h2 style={{textAlign: "center"}}>Budgeting</h2>
         <p>
           Budgeting or organizing your spending is a foundational tool for wealth accumulation. People often overlook
           tracking expenses and planning for the future which can lead to problems down the line.
         </p>
       </section>
     <section>
-      <h2>Expense Tracker</h2>
+      <h2 style={{textAlign: "center"}}>Expense Tracker</h2>
       <form id="expense-tracker-form">
         <div class="form-group">
           <label for="income">Monthly Income</label>
           <input type="number" class="form-control" id="income" placeholder="Enter your monthly income" required />
         </div>
-        <h3>Expenses</h3>
+        <h4>Expenses</h4>
         <div class="form-group">
           <label for="housing">Housing</label>
           <input type="number" class="form-control" id="housing" placeholder="Enter your housing expenses" required />
@@ -56,7 +56,7 @@ function BudgetingPage() {
       </div>
     </section>
     <section>
-      <h2>Saving Goals</h2>
+      <h2 style={{textAlign: "center"}}>Saving Goals</h2>
       <p>Setting up a saving goal is a crucial step towards financial freedom. It helps you to track your progress and
         stay motivated to achieve your financial goals.</p>
       <form id="saving-goals-form">

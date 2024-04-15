@@ -4,7 +4,7 @@ function Contact() {
   return (
     <main className="container mt-4">
       <div class="container">
-      <h2>Contact Us</h2>
+      <h2 style={{textAlign: "center"}}>Contact Us</h2>
       <p>Have a question or comment? We'd love to hear from you! Please fill out the form below and we'll get back to
         you as soon as possible.</p>
       <form id="contact-form">

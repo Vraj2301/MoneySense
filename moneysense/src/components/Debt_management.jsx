@@ -4,7 +4,7 @@ function Debt_management() {
   return (
     <main className="container mt-4">
       <section>
-      <h2>Debt Repayment Calculator</h2>
+      <h2 style={{textAlign: "center"}}>Debt Repayment Calculator</h2>
       <form id="debt-repayment-form">
         <div class="form-group">
           <label for="totalDebt">Total Debt Amount</label>
@@ -25,7 +25,7 @@ function Debt_management() {
         Your debt will be paid off in <span id="monthsToRepay"></span> months.
       </div>
     </section>
-    <h2>Debt Management</h2>
+    <h2 style={{textAlign: "center"}}>Debt Management</h2>
     <p>Debt is a huge sector in which people lack literacy. They tend to borrow without really thinking about a good
       repayment strategy, which is a major factor in causing financial stress.</p>
     <p>Here are some tips for effective debt management:</p>

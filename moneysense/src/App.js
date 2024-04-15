@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
 import Navigation from './components/Navigation';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
@@ -19,8 +18,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Header */}
-        <Header />
 
         {/* Navigation */}
         <Navigation />
