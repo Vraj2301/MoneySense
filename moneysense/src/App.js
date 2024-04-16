@@ -10,9 +10,11 @@ import Debt_management from './components/Debt_management';
 import Financial_literacy from './components/Financial_literacy';
 import Investing from './components/Investing';
 import Script from './components/Script'; // Import the Script component
+import LoginPage from './components/Login';
 import './components/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import SignupPage from './components/Sign_up';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/debt_management" element={<Debt_management />} />
           <Route path="/financial_literacy" element={<Financial_literacy />} />
           <Route path="/investing" element={<Investing />} />
+          <Route path="/login" element={<LoginPage/>}/>
+          <Route path="/sign_up" element={<SignupPage/>}/>
         </Routes>
 
         {/* Footer */}

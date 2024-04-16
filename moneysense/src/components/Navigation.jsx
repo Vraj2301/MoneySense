@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "./logo_.png";
+import "bootstrap-icons/font/bootstrap-icons.css"; // Import Bootstrap Icons CSS
 
 function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">MoneySense</Link>
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Logo" style={{ maxWidth: '200px', maxHeight: '200px' }} />
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -26,6 +30,9 @@ function Navigation() {
             </li>
           </ul>
         </div>
+        <Link to="/login" className="btn btn-outline-primary">
+          <i className="bi bi-person-circle"></i> Login {/* Fixed class attribute */}
+        </Link>
       </div>
     </nav>
   );
