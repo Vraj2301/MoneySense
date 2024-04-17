@@ -13,7 +13,8 @@ Money$ense is a platform where users can learn about different ways to invest th
 - Finally, our prototype was built with a minimalistic, sleek design in mind. The idea was to allow first-time users to easily use our system by being familiar with the buttons and functionality we used. We incorporated a consistent layout to aid with usability, an easy to follow content hierarchy to improve flow and enjoyable yet simple colors to attract our users.
 - The initial page displays a carousel with the many topics we provide lessons on and a simple navigation bar that allows users to easily travel across the pages of the application.
 
-![image](https://github.com/Vraj2301/MoneySense/assets/60637956/da435d66-1dcf-40e9-8cbc-7dc8ef09d824)
+<img width="1403" alt="Screenshot 2024-04-16 at 8 13 40 PM" src="https://github.com/Vraj2301/MoneySense/assets/60637956/2bbcff21-d44e-4859-945b-7a1ea9b15146">
+
 
 ## How to run application locally:
 1. Clone the repository using any method you prefer (using github CLI shown bellow):
